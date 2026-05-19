@@ -1020,7 +1020,6 @@
         font-size: 1.8rem;
     }
     
-    /* Form-ku wuxuu noqonayaa mid is-kor fadhiya talefanka dhexdiis */
     .newsletter-form {
         flex-direction: column;
         background-color: transparent;
@@ -1042,9 +1041,7 @@
         padding: 15px;
     }
 }
-/* <!-- Section-7 --> */
 
-/* Footer Base Styles */
 .main-footer {
     background-color: #111827; /* Madow aad u qurux badan */
     color: #9ca3af; /* Qoraal cawl khafiif ah si uu indhaha u uro */
@@ -1160,7 +1157,7 @@
     }
 }
 
-/* RESPONSIVE: Ku habaynta Shaashadaha kala duwan */
+
 @media (max-width: 968px) {
     .footer-container {
         grid-template-columns: repeat(2, 1fr); /* 2 Tiir shaashadaha dhexe */
