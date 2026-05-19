@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="header-container">
+        <a href="index.html" class="logo">som<span>-electronics</span></a>
+        <!-- nasra -->
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="header-icons">
+            <a href="#" class="icon-link" title="Wishlist">❤️</a>
+            <a href="#" class="icon-link cart-icon" title="Cart">
+                🛒 <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+  <!-- section -->
+
+    <section class="shop-header-section">
+    <div class="shop-header-container">
+        
+        <div class="shop-title-area">
+            <h1>Dhammaan Alaabtayada</h1>
+            <p>Ka raadi oo ka dhex xulo aaladaha elektaroonigga ah ee ugu dambeeyay</p>
+        </div>
+        
+        <div class="shop-search-area">
+            <form class="search-wrapper" onsubmit="event.preventDefault();">
+                <span class="search-icon">🔍</span>
+                <input type="text" placeholder="Raadi talefannada, laptops, saacadaha..." class="search-input">
+                <button type="submit" class="search-btn">Raadi</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+
+<div class="shop-main-container">
+    
+    <aside class="filters-sidebar">
+        <div class="filter-header">
+            <h3>Miiro Alaabta</h3>
+            <button class="clear-filters-btn">Nadiifi 🧹</button>
+        </div>
+
+        <div class="filter-group">
+            <h4>Qaybaha Alaabta</h4>
+            <div class="filter-options">
+                <label class="filter-label">
+                    <input type="checkbox" name="category" value="phones">
+                    <span>Smartphones</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="category" value="laptops">
+                    <span>Laptops</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="category" value="watches">
+                    <span>Smart Watches</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="category" value="audio">
+                    <span>Audio Gear</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Shirkadaha (Brands)</h4>
+            <div class="filter-options">
+                <label class="filter-label">
+                    <input type="checkbox" name="brand" value="apple">
+                    <span>Apple</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="brand" value="samsung">
+                    <span>Samsung</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="brand" value="dell">
+                    <span>Dell</span>
+                </label>
+                <label class="filter-label">
+                    <input type="checkbox" name="brand" value="sony">
+                    <span>Sony</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Qiimaha (Price)</h4>
+            <div class="price-range-wrapper">
+                <input type="range" min="10" max="2000" value="1000" class="price-slider">
+                <div class="price-values">
+                    <span>Min: <b>$10</b></span>
+                    <span>Max: <b>$2,000</b></span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="products-display-area">
+        
+        <div class="products-sort-bar">
+            <p>Waxaa kuu muuqda <span>6</span> alaabood</p>
+            <select class="sort-dropdown">
+                <option value="default">Ugu dambeeyay</option>
+                <option value="price-low">Qiimaha: Hoos ilaa Kor</option>
+                <option value="price-high">Qiimaha: Kor ilaa Hoos</option>
+                <option value="popular">Ugu iibsiga badan</option>
+            </select>
+        </div>
+
+        <div class="shop-products-grid">
+            
+            <div class="shop-p-card">
+                <div class="shop-p-img">
+                    <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=600" alt="iPhone 15">
+                    <span class="p-badge-new">New</span>
+                </div>
+                <div class="shop-p-info">
+                    <h3>iPhone 15 Pro Max</h3>
+                    <div class="shop-p-stars">⭐⭐⭐⭐⭐ <span>(45)</span></div>
+                    <div class="shop-p-footer">
+                        <span class="shop-p-price">$1,199</span>
+                        <button class="shop-p-btn" title="Ku dar Cart">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-p-card">
+                <div class="shop-p-img">
+                    <img src="https://images.unsplash.com/photo-1496181130204-755241524eab?q=80&w=600" alt="Macbook">
+                    <span class="p-badge-discount">-10%</span>
+                </div>
+                <div class="shop-p-info">
+                    <h3>MacBook Pro M3</h3>
+                    <div class="shop-p-stars">⭐⭐⭐⭐⭐ <span>(28)</span></div>
+                    <div class="shop-p-footer">
+                        <span class="shop-p-price">$1,499</span>
+                        <button class="shop-p-btn" title="Ku dar Cart">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-p-card">
+                <div class="shop-p-img">
+                    <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=600" alt="Smartwatch">
+                </div>
+                <div class="shop-p-info">
+                    <h3>Apple Watch Series 9</h3>
+                    <div class="shop-p-stars">⭐⭐⭐⭐☆ <span>(64)</span></div>
+                    <div class="shop-p-footer">
+                        <span class="shop-p-price">$399</span>
+                        <button class="shop-p-btn" title="Ku dar Cart">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-p-card">
+                <div class="shop-p-img">
+                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=600" alt="Headphones">
+                </div>
+                <div class="shop-p-info">
+                    <h3>Sony WH-1000XM5</h3>
+                    <div class="shop-p-stars">⭐⭐⭐⭐⭐ <span>(110)</span></div>
+                    <div class="shop-p-footer">
+                        <span class="shop-p-price">$349</span>
+                        <button class="shop-p-btn" title="Ku dar Cart">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-p-card">
+                <div class="shop-p-img">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600" alt="Gaming Mouse">
+                </div>
+                <div class="shop-p-info">
+                    <h3>Logitech G Pro Wireless</h3>
+                    <div class="shop-p-stars">⭐⭐⭐⭐☆ <span>(19)</span></div>
+                    <div class="shop-p-footer">
+                        <span class="shop-p-price">$129</span>
+                        <button class="shop-p-btn" title="Ku dar Cart">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shop-p-card">
+                <div class="shop-p-img">
+                    <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=600" alt="Monitor">
+                    <span class="p-badge-discount">Hot</span>
+                </div>
+                <div class="shop-p-info">
+                    <h3>Samsung 32" Odyssey G7</h3>
+                    <div class="shop-p-stars">⭐⭐⭐⭐⭐ <span>(52)</span></div>
+                    <div class="shop-p-footer">
+                        <span class="shop-p-price">$599</span>
+                        <button class="shop-p-btn" title="Ku dar Cart">🛒</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </main>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <div class="footer-column">
+            <a href="#" class="footer-logo">som<span>-electronics</span></a>
+            <p class="footer-about">Waxaan macaamiisheena u soo xulnaa agabka elektaroonigga ah ee ugu tayada sarreeya iyo tignoolajiyada ugu dambeysay dalka.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Instagram">📸</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="WhatsApp">💬</a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Menu-yada</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Caawinaad</h3>
+            <ul>
+                <li><a href="#faq">Su'aalaha Badanaa La Waydiiyo</a></li>
+                <li><a href="#shipping">Habka Gaarsiinta</a></li>
+                <li><a href="#returns">Beddelka Alaabta</a></li>
+                <li><a href="#privacy">Xog-dhawrka (Privacy)</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Nala Soo Xiriir</h3>
+            <ul class="contact-info">
+                <li>📍 Suuqa Bakaaraha, Mogadishu, Somalia</li>
+                <li>📞 +252 61 XXXXXXX</li>
+                <li>✉️ info@som-electronics.com</li>
+                <li>🕒 Sabti - Khamiis: 8:00 AM - 9:00 PM</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 som-electronics. All rights reserved. Developed with ❤️</p>
+    </div>
+</footer>
+</body>
+</html>

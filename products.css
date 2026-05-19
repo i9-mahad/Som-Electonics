@@ -1,0 +1,727 @@
+/* ==========================================================================
+   HEADER STYLES
+   ========================================================================== */
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #2563eb; /* Buluug */
+}
+
+/* Nav Menu */
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-menu a:hover, .nav-menu a.active {
+    color: #2563eb;
+}
+
+/* Header Icons */
+.header-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.icon-link {
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Waxaa loo qariyo talefannada */
+    }
+}
+
+/* ==========================================================================
+   FOOTER STYLES
+   ========================================================================== */
+.main-footer {
+    background-color: #111827; /* Madow */
+    color: #9ca3af;
+    padding: 60px 0 20px 0;
+    font-size: 0.95rem;
+    border-top: 4px solid #2563eb;
+    margin-top: 60px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 40px;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #2563eb;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* Footer Logo & About */
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #2563eb;
+}
+
+.footer-about {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #1f2937;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+.contact-info li {
+    line-height: 1.5;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* Responsive Footer */
+@media (max-width: 968px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+/* Shop Header Section Base */
+.shop-header-section {
+    background-color: #f9fafb; /* Midab iftiimaya oo ka duwan Hero Section-ka bogga hore */
+    padding: 50px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.shop-header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Qaybta Qoraalka/Cinwaanka */
+.shop-title-area h1 {
+    font-size: 2.2rem;
+    color: #1f2937;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.shop-title-area p {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* Qaybta Search Bar-ka */
+.shop-search-area {
+    flex: 1;
+    max-width: 500px; /* Si uusan aad uga ballaranin shaashadda */
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 4px 6px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Marka qofku uu gujiyo dhexda search bar-ka (Focus) */
+.search-wrapper:focus-within {
+    border-color: #2563eb; /* Midabka buluugga ah ee dukaanka */
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.search-icon {
+    font-size: 1.1rem;
+    padding: 0 12px;
+    color: #9ca3af;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 0.95rem;
+    color: #1f2937;
+    padding: 10px 0;
+}
+
+.search-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Badanka Raadi (Search Button) */
+.search-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.search-btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* RESPONSIVE: Ku habaynta Shaashadaha yaryar */
+@media (max-width: 768px) {
+    .shop-header-container {
+        flex-direction: column; /* Qoraalka iyo Search bar-ku isku-kor ayay noqonayaan */
+        align-items: flex-start;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+    
+    .shop-search-area {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .shop-title-area h1 {
+        font-size: 1.8rem;
+    }
+}
+
+
+/* Shop Main Container Layout */
+.shop-main-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px; /* Masaafada u dhaxaysa Filters-ka iyo Alaabta */
+}
+
+/* Sidebar-ka Filters-ka */
+.filters-sidebar {
+    width: 280px; /* Ballaca go'an ee sidebar-ka */
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    height: fit-content; /* Wuxuu u weynaanayaa kaliya inta koodku yahay */
+    position: sticky;
+    top: 90px; /* Wuxuu ku dhex dhegayaa shaashada marka hoos loo dego */
+}
+
+/* Madaxa Filters-ka */
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-header h3 {
+    font-size: 1.15rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.clear-filters-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Koox kasta oo Filter ah (Category, Brand, Price) */
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group h4 {
+    font-size: 1rem;
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Liiska Option-nada (Checkboxes) */
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #4b5563;
+    transition: color 0.2s ease;
+}
+
+.filter-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2563eb; /* Midabka buluugga ah ee dukaanka */
+    cursor: pointer;
+}
+
+.filter-label:hover {
+    color: #2563eb;
+}
+
+/* Price Slider-ka */
+.price-range-wrapper {
+    padding-top: 5px;
+}
+
+.price-slider {
+    width: 100%;
+    accent-color: #2563eb;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.price-values b {
+    color: #1f2937;
+}
+
+/* Qaybta Midig ee Alaabta qaadaysa */
+.products-display-area {
+    flex: 1; /* Wuxuu qaadanayaa inta ka hartay ballaca shaashadda */
+}
+
+/* RESPONSIVE: Ku habaynta Shaashadaha yaryar (Taleefannada) */
+@media (max-width: 768px) {
+    .shop-main-container {
+        flex-direction: column; /* Waxay noqonayaan isku-kor halkii ay is-garab fadhiyeen */
+    }
+    
+    .filters-sidebar {
+        width: 100%; /* Wuxuu qaadanayaa ballaca shaashada oo dhan */
+        position: relative;
+        top: 0;
+    }
+}
+
+/* ==========================================================================
+   SHOP MAIN CONTAINER LAYOUT (Filters + Grid)
+   ========================================================================== */
+.shop-main-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 30px; /* Masaafada u dhaxaysa Filters-ka iyo Alaabta */
+}
+
+/* ==========================================================================
+   SIDEBAR: FILTERS SIDEBAR STYLES
+   ========================================================================== */
+.filters-sidebar {
+    width: 280px; /* Ballaca go'an ee sidebar-ka */
+    flex-shrink: 0;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    height: fit-content;
+    position: sticky;
+    top: 90px; /* Wuxuu ku dhex dhegayaa shaashada marka hoos loo dego */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+}
+
+.filter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.filter-header h3 {
+    font-size: 1.15rem;
+    color: #1f2937;
+    font-weight: 700;
+}
+
+.clear-filters-btn {
+    background: none;
+    border: none;
+    color: #ef4444;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.filter-group {
+    margin-bottom: 25px;
+}
+
+.filter-group h4 {
+    font-size: 1rem;
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    color: #4b5563;
+    transition: color 0.2s ease;
+}
+
+.filter-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2563eb;
+    cursor: pointer;
+}
+
+.filter-label:hover {
+    color: #2563eb;
+}
+
+/* Price Slider */
+.price-range-wrapper {
+    padding-top: 5px;
+}
+
+.price-slider {
+    width: 100%;
+    accent-color: #2563eb;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.price-values {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #6b7280;
+}
+
+.price-values b {
+    color: #1f2937;
+}
+
+.products-display-area {
+    flex: 1; /* Wuxuu qaadanayaa inta ka hartay ballaca shaashadda */
+}
+
+/* Products Sort Bar (Tirada iyo Dropdown-ka) */
+.products-sort-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #f9fafb;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.products-sort-bar p {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.products-sort-bar p span {
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.sort-dropdown {
+    padding: 8px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    color: #4b5563;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Shop Products Grid System (3 Tiir) */
+.shop-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Kaarka Alaabta (Product Card) */
+.shop-p-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop-p-img {
+    position: relative;
+    height: 200px;
+    background-color: #f3f4f6;
+    overflow: hidden;
+}
+
+.shop-p-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Badges (New / Discount) */
+.p-badge-new, .p-badge-discount {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.p-badge-new { background-color: #10b981; }
+.p-badge-discount { background-color: #ef4444; }
+
+/* Macluumaadka Qoraalka */
+.shop-p-info {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.shop-p-info h3 {
+    font-size: 1.05rem;
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.shop-p-stars {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: #f59e0b;
+}
+
+.shop-p-stars span {
+    color: #9ca3af;
+    margin-left: 4px;
+}
+
+/* Qiimaha iyo Badanka */
+.shop-p-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 12px;
+}
+
+.shop-p-price {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.shop-p-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.shop-p-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Card Hover Effects */
+.shop-p-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.04);
+    border-color: #d1d5db;
+}
