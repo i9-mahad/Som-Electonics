@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="cart.css">
+<title>Cart Page</title>
+</head>
+
+<body>
+
+<!-- this is header -->
+    <header class="main-header">
+    <div class="header-container">
+        <!-- Logo-ga Website-ka -->
+        <a href="#" class="logo">som<span>-electronics</span></a>
+        
+        <!-- Menu-yada Nav-ka -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Badhamada Waxqabadka (Actions) -->
+        <div class="header-actions">
+            <a href="#search" class="action-link" title="Raadi"><i class="search-icon">🔍</i></a>
+            <a href="Cart.html" class="action-link cart-btn" title="Kariidka">
+                <i class="cart-icon">🛒</i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+<h1 style="padding:20px; color:#1E3A8A;">Your Cart <i class="fa-solid fa-cart-arrow-down" style="color: rgba(128, 128, 128, 0.603); font-size: 30px;"></i></h1>
+
+<div class="container">
+
+  <!-- ITEMS -->
+  <div class="cart-items">
+
+    <div class="cart-item">
+    <img src="./laptop.png" alt="laptop">
+      <div class="item-info">
+        <h3>laptop</h3>
+        <p>$450</p>
+      </div>
+
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+
+      <div class="remove"><i class="fa-solid fa-xmark" style="color: rgba(255, 0, 0, 0.555); font-weight: bold; font-size: 24px;"></i></div>
+    </div>
+
+    <div class="cart-item">
+     <img src="./headphones.png" alt="headphones">
+      <div class="item-info">
+        <h3>headphones</h3>
+        <p>$150</p>
+      </div>
+
+      <div class="quantity">
+        <button>-</button>
+        <span>1</span>
+        <button>+</button>
+      </div>
+
+      <div class="remove"><i class="fa-solid fa-xmark" style="color: rgba(255, 0, 0, 0.555); font-weight: bold; font-size: 24px;"></i></div>
+    </div>
+
+  </div>
+
+  <!-- 💰 SUMMARY -->
+  <div class="summary">
+    <h2>Summary</h2>
+    <p>Subtotal: $70</p>
+
+    <div class="coupon">
+      <input type="text" placeholder="Coupon code">
+      <button>Apply</button>
+    </div>
+
+    <p>Total: $70</p>
+
+    <button>Checkout</button>
+  </div>
+
+</div>
+
+<!-- CONTACT / ABOUT -->
+<div class="conabou">
+  <div>
+    <h3>About Us</h3>
+    <p>We provide high quality products with the best prices.</p>
+  </div>
+
+  <div>
+    <h3>Contact</h3>
+    <p>Email: support@shop.com</p>
+    <p>Phone: +252 000000</p>
+  </div>
+</div>
+
+<!-- muna -->
+<footer class="main-footer">
+    <div class="footer-container">
+        
+        <!-- Tiirka 1-aad: About & Socials -->
+        <div class="footer-column">
+            <a href="#" class="footer-logo">som<span>-electronics</span></a>
+            <p class="footer-about">Waxaan macaamiisheena u soo xulnaa agabka elektaroonigga ah ee ugu tayada sarreeya iyo tignoolajiyada ugu dambeysay dalka.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Instagram">📸</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="WhatsApp">💬</a>
+            </div>
+        </div>
+
+        <!-- Tiirka 2-aad: Quick Links -->
+        <div class="footer-column">
+            <h3>Menu-yada</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Tiirka 3-aad: Customer Support -->
+        <div class="footer-column">
+            <h3>Caawinaad</h3>
+            <ul>
+                <li><a href="#faq">Su'aalaha Badanaa La Waydiiyo</a></li>
+                <li><a href="#shipping">Habka Gaarsiinta</a></li>
+                <li><a href="#returns">Beddelka Alaabta</a></li>
+                <li><a href="#privacy">Xog-dhawrka (Privacy)</a></li>
+            </ul>
+        </div>
+
+        <!-- Tiirka 4-aad: Contact Info -->
+        <div class="footer-column">
+            <h3>Nala Soo Xiriir</h3>
+            <ul class="contact-info">
+                <li>📍 Suuqa Bakaaraha, Mogadishu, Somalia</li>
+                <li>📞 +252 61 XXXXXXX</li>
+                <li>✉️ info@som-electronics.com</li>
+                <li>🕒 Sabti - Khamiis: 8:00 AM - 9:00 PM</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Xuquuqda Daabacaadda (Copyright) -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 som-electronics. All rights reserved. Developed with ❤️</p>
+    </div>
+</footer>
+
+</body>
+</html>
