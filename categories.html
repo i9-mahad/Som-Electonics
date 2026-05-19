@@ -834,6 +834,143 @@
         gap: 30px;
     }
 }
+
+
+
+/* ================= RESPONSIVE ================= */
+
+.menu-icon{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#07111f;
+}
+
+
+@media(max-width:768px){
+
+    .header-container{
+        padding:0 5%;
+    }
+
+    .nav{
+        display:none;
+    }
+
+    .header-icons{
+        display:none;
+    }
+
+    .menu .menu-icon{
+        display:block;
+        margin-left: 560px;
+       
+        
+       
+        
+    }
+
+    .logo{
+        font-size:28px;
+    }
+
+    .logo i{
+        width:42px;
+        height:42px;
+        font-size:18px;
+    }
+
+    .container{
+        padding:40px 5%;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text p{
+        width:100%;
+    }
+
+    .hero-image img{
+        max-width:100%;
+    }
+
+    .category-section{
+        grid-template-columns:1fr;
+        gap:40px;
+    }
+
+    .show img{
+        height:auto;
+    }
+
+    .info h2{
+        font-size:35px;
+    }
+
+    .price{
+        font-size:28px;
+    }
+
+    .description{
+        padding:30px;
+    }
+
+    .description h2{
+        font-size:30px;
+    }
+
+    .title h2,
+    .C-title h2,
+    .R-title h2{
+        font-size:34px;
+    }
+
+    .title p,
+    .C-title p{
+        width:100%;
+    }
+
+    .feature-grid,
+    .review-grid,
+    .related-grid,
+    .R-grid,
+    .C-container{
+        grid-template-columns:1fr;
+    }
+
+    .icons{
+        justify-content:center;
+    }
+
+    .icon-box{
+        width:100%;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-column{
+        text-align:center;
+    }
+
+    .footer-column h3::after{
+        left:50%;
+        transform:translateX(-50%);
+    }
+
+    .social-links{
+        justify-content:center;
+    }
+
+}
     </style>
 
 </head>
@@ -858,6 +995,8 @@
 
         </nav>
 
+    
+
         <div class="header-icons">
             <a href="shop.html" class="action-link" title="Search">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -870,6 +1009,12 @@
             </a>
         </div>
     </div>
+        <div class="menu">
+        
+            <i class="fa-solid fa-bars menu-icon"></i>
+        </a>
+    </div>
+
 </header>
 
 
@@ -929,7 +1074,7 @@
         <div class="icons">
 
           <div class="icon-box">
-            <i class="fa-solid fa-battery-full"></i>
+             <i class="fa-solid fa-camera"></i>
             <h4>48MP</h4>
           </div>
 
@@ -979,7 +1124,7 @@
 
             <div class="C-content">
 
-                <h3>MacBook Laptop</h3>
+            <h3>MacBook Pro</h3>
 
                 <p>
                     Laptop awood badan leh oo ku haboon
@@ -1031,9 +1176,9 @@
             </div>
 
             <div class="C-content">
-                <h3>Wireless Headphones</h3>
+                <h3>Play station</h3>
                 <p>
-                    Headphones tayo sare leh oo leh
+                    play station tayo sare leh oo leh
                     sound nadiif ah iyo bass xoog badan.
                 </p>
 
@@ -1127,11 +1272,11 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
                 <li><a href="categories.html">Categories</a></li>
-                <li><a href="about">About Us</a></li>
+                 <li><a href="contact.html">contact</a></li>
+                  <li><a href="Cart.html">cart</a></li>
             </ul>
         </div>
 
-        <!-- Tiirka 3-aad: Customer Support -->
         <div class="footer-column">
             <h3>Caawinaad</h3>
             <ul>
@@ -1142,7 +1287,6 @@
             </ul>
         </div>
 
-        <!-- Tiirka 4-aad: Contact Info -->
         <div class="footer-column">
             <h3>Nala Soo Xiriir</h3>
             <ul class="contact-info">
@@ -1155,7 +1299,6 @@
 
     </div>
 
-    <!-- Xuquuqda Daabacaadda (Copyright) -->
     <div class="footer-bottom">
         <p> 2026 som-electronics. All rights reserved. Developed with </p>
     </div>
