@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- this is header -->
+    <header class="main-header">
+    <div class="header-container">
+        <!-- Logo-ga Website-ka -->
+        <a href="#" class="logo">som<span>-electronics</span></a>
+        
+        <!-- Menu-yada Nav-ka -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Badhamada Waxqabadka (Actions) -->
+        <div class="header-actions">
+            <a href="#search" class="action-link" title="Raadi"><i class="search-icon">🔍</i></a>
+            <a href="#cart" class="action-link cart-btn" title="Kariidka">
+                <i class="cart-icon">🛒</i>
+                <span class="cart-count">0</span>
+            </a>
+        </div>
+    </div>
+</header>
+
+  <!-- Section-1 -->
+
+    <section class="hero-section">
+    <div class="hero-overlay"></div> <!-- Tani waxay madoonaysaa sawirka si qoraalku u dhaafo -->
+    <div class="hero-content">
+        <h1 class="hero-title">Kala Soo Bax Qalabkii Ugu Dambeeyay Ee Smart-ka Ahaa</h1>
+        <p class="hero-subtitle">Hel talefannada iyo qalabka elektaroonigga ah ee ugu tayada sarreeya, adigoo helaya dammaanad iyo adeeg degdeg ah.</p>
+        <a href="#shop" class="hero-btn">Shop Now</a>
+    </div>
+</section>
+
+<!-- Section-2 -->
+
+<section class="categories-section" id="categories">
+    <div class="section-title">
+        <h2>Eeg Qaybaha Alaabtayada</h2>
+        <p>Dooro qaybta aad xiisaynayso si aad u aragto agabka ugu dambeeyay</p>
+    </div>
+
+    <div class="categories-grid">
+        <!-- Qaybta 1-aad: Phones -->
+        <a href="#phones" class="category-card">
+            <div class="category-image">
+                <img src="https://i.pinimg.com/736x/4d/d5/f5/4dd5f5ad7f02e4ece0e2b91ba087cc0d.jpg" alt="Smartphones">
+            </div>
+            <div class="category-info">
+                <h3>Smartphones</h3>
+                <span>Eeg Alaabta ➔</span>
+            </div>
+        </a>
+
+        <!-- Qaybta 2-aad: Laptops -->
+        <a href="#laptops" class="category-card">
+            <div class="category-image">
+                <img src="https://i.pinimg.com/1200x/70/48/b3/7048b30c361e2f0418300d69d6faaca3.jpg" alt="Laptops">
+            </div>
+            <div class="category-info">
+                <h3>Laptops</h3>
+                <span>Eeg Alaabta ➔</span>
+            </div>
+        </a>
+
+        <!-- Qaybta 3-aad: Smart Watches -->
+        <a href="#watches" class="category-card">
+            <div class="category-image">
+                <img src="https://i.pinimg.com/1200x/37/a8/ae/37a8ae2095512429d5d0ffa5d8675378.jpg" alt="Smart Watches">
+            </div>
+            <div class="category-info">
+                <h3>Smart Watches</h3>
+                <span>Eeg Alaabta ➔</span>
+            </div>
+        </a>
+
+        <!-- Qaybta 4-aad: Audio/Headphones -->
+        <a href="#audio" class="category-card">
+            <div class="category-image">
+                <img src="https://i.pinimg.com/1200x/1b/99/7d/1b997da38fda497c5f3cf9200d9077a1.jpg" alt="Audio">
+            </div>
+            <div class="category-info">
+                <h3>Audio Gear</h3>
+                <span>Eeg Alaabta ➔</span>
+            </div>
+        </a>
+    </div>
+</section>
+    
+<!-- Section-3 -->
+ <section class="products-section" id="shop">
+    <div class="section-title">
+        <h2>Alaabta Ugu Caansan</h2>
+        <p>Kala dooro aaladaha ugu iibsiga badan asbuucan</p>
+    </div>
+
+    <div class="products-grid">
+        <!-- Alaabta 1-aad -->
+        <div class="product-card">
+            <span class="product-badge sale">Sale</span>
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=600" alt="Smartphone Pro">
+            </div>
+            <div class="product-details">
+                <p class="product-category">Phones</p>
+                <h3 class="product-title">iPhone 15 Pro Max</h3>
+                <div class="product-price">
+                    <span class="current-price">$1,199</span>
+                    <span class="old-price">$1,299</span>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i>🛒</i> Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Alaabta 2-aad -->
+        <div class="product-card">
+            <span class="product-badge hot">Hot</span>
+            <div class="product-image">
+                <img src="https://i.pinimg.com/736x/0e/e7/68/0ee768e5e44f5c436c151272b75741fc.jpg" alt="MacBook Pro">
+            </div>
+            <div class="product-details">
+                <p class="product-category">Laptops</p>
+                <h3 class="product-title">MacBook Pro M3</h3>
+                <div class="product-price">
+                    <span class="current-price">$1,499</span>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i>🛒</i> Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Alaabta 3-aad -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?q=80&w=600" alt="Smart Watch">
+            </div>
+            <div class="product-details">
+                <p class="product-category">Watches</p>
+                <h3 class="product-title">Apple Watch Series 9</h3>
+                <div class="product-price">
+                    <span class="current-price">$399</span>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i>🛒</i> Add to Cart
+                </button>
+            </div>
+        </div>
+
+        <!-- Alaabta 4-aad -->
+        <div class="product-card">
+            <span class="product-badge sale">Sale</span>
+            <div class="product-image">
+                <img src="https://i.pinimg.com/1200x/78/d5/f6/78d5f614f6ec504d1702dbcd49da2b07.jpg" alt="Wireless Headphones">
+            </div>
+            <div class="product-details">
+                <p class="product-category">Audio</p>
+                <h3 class="product-title">Sony WH-1000XM5</h3>
+                <div class="product-price">
+                    <span class="current-price">$349</span>
+                    <span class="old-price">$399</span>
+                </div>
+                <button class="add-to-cart-btn">
+                    <i>🛒</i> Add to Cart
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section-3 -->
+ <section class="offers-section">
+    <div class="offers-container">
+        
+        <!-- Banner 1: Countdown Offer -->
+        <div class="offer-banner banner-left">
+            <div class="offer-content">
+                <span class="offer-tag">Dalab xaddidan!</span>
+                <h2>Qiimo Dhimista Toddobaadka</h2>
+                <p>Hel ilaa <b>50% OFF</b> dhammaan agabka casriga ah ee la doortay.</p>
+                
+                <!-- Saacadda wax tirinaysa (Visual Countdown) -->
+                <div class="countdown">
+                    <div class="countdown-item"><span>02</span><small>Days</small></div>
+                    <div class="countdown-item"><span>14</span><small>Hours</small></div>
+                    <div class="countdown-item"><span>45</span><small>Mins</small></div>
+                </div>
+                
+                <a href="#shop" class="offer-btn">Iibsade Hadda</a>
+            </div>
+        </div>
+
+        <!-- Banner 2: Product Specific Offer -->
+        <div class="offer-banner banner-right">
+            <span class="discount-badge">-30%</span>
+            <div class="offer-content">
+                <span class="offer-tag font-blue">Aaladaha Maqalka</span>
+                <h2>Sii Qabso Sound Pro X</h2>
+                <p>Khibrad maqal oo heer sare ah iyo dammaanad buuxda.</p>
+                <a href="#shop" class="offer-btn btn-secondary">Eeg Dalabka ➔</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Section-4 -->
+ <section class="bestsellers-section">
+    <div class="section-title">
+        <h2>Alaabta Ugu Iibsiga Badan</h2>
+        <p>Kuwa ugu caansan ee macaamiisheenu aadka u jecelyihiin</p>
+    </div>
+
+    <div class="bestsellers-grid">
+        <!-- Alaabta 1-aad -->
+        <div class="bestseller-card">
+            <div class="card-img-container">
+                <img src="https://i.pinimg.com/736x/7f/4a/e7/7f4ae736835903fc6f91bd66c1d0ae91.jpg" alt="Phone Pro">
+                <button class="wishlist-btn" title="Ku dar Wishlist">❤️</button>
+            </div>
+            <div class="card-info">
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <small>(4.9)</small>
+                </div>
+                <h3>Samsung Galaxy S24 Ultra</h3>
+                <p class="sales-count">🔥 140+ la iibiyay</p>
+                <div class="card-footer">
+                    <span class="price">$1,299</span>
+                    <button class="action-icon-btn" title="Ku dar Cart-ka">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alaabta 2-aad -->
+        <div class="bestseller-card">
+            <div class="card-img-container">
+                <img src="https://i.pinimg.com/736x/a5/8b/2a/a58b2a2aaf1f0d18d87582ba42c6b7f2.jpg" alt="Laptop Sleek">
+                <button class="wishlist-btn" title="Ku dar Wishlist">❤️</button>
+            </div>
+            <div class="card-info">
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <small>(4.8)</small>
+                </div>
+                <h3>Dell XPS 13 Laptop</h3>
+                <p class="sales-count">🔥 95+ la iibiyay</p>
+                <div class="card-footer">
+                    <span class="price">$999</span>
+                    <button class="action-icon-btn" title="Ku dar Cart-ka">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alaabta 3-aad -->
+        <div class="bestseller-card">
+            <div class="card-img-container">
+                <img src="https://i.pinimg.com/736x/ea/53/4c/ea534c8678c9f2452dff07e7124aea18.jpg" alt="Smartwatch Sport">
+                <button class="wishlist-btn" title="Ku dar Wishlist">❤️</button>
+            </div>
+            <div class="card-info">
+                <div class="rating">
+                    <span>⭐⭐⭐⭐☆</span>
+                    <small>(4.5)</small>
+                </div>
+                <h3>Galaxy Watch 6 Pro</h3>
+                <p class="sales-count">🔥 210+ la iibiyay</p>
+                <div class="card-footer">
+                    <span class="price">$299</span>
+                    <button class="action-icon-btn" title="Ku dar Cart-ka">🛒</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alaabta 4-aad -->
+        <div class="bestseller-card">
+            <div class="card-img-container">
+                <img src="https://i.pinimg.com/736x/20/cc/f7/20ccf73437ab5d2e13742ed9bb564bb7.jpg" alt="Headphones Noise Cancelling">
+                <button class="wishlist-btn" title="Ku dar Wishlist">❤️</button>
+            </div>
+            <div class="card-info">
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                    <small>(4.9)</small>
+                </div>
+                <h3>Bose QuietComfort 45</h3>
+                <p class="sales-count">🔥 180+ la iibiyay</p>
+                <div class="card-footer">
+                    <span class="price">$329</span>
+                    <button class="action-icon-btn" title="Ku dar Cart-ka">🛒</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section-5 -->
+ <section class="testimonials-section">
+    <div class="section-title">
+        <h2>Waxa Ay Macaamiisheenu Na Kahdaan</h2>
+        <p>Ku kalsoonow khibradda iyo adeegga ay dadka kale naga heleen</p>
+    </div>
+
+    <div class="testimonials-grid">
+        <!-- Fikradda 1-aad -->
+        <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">"Aad baan ula dhacay adeegga som-electronics. Waxaan ka iibsaday iPhone 15 Pro Max, si degdeg ah ayay iigu soo dhiibeen, alaabtuna waa mid asal ah (original) oo dammaanad leh."</p>
+            <div class="testimonial-user">
+                <div class="user-avatar">AH</div>
+                <div class="user-meta">
+                    <h4>Ahmed Hassan</h4>
+                    <small>Macaamil Joogto Ah</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fikradda 2-aad -->
+        <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">"Laptops-ka ay iibiyaan waa kuwo aad u tayo sarreeya. Waxaan ka iibsaday Dell XPS dhowr bilood ka hor, ilaa hadda si xawli ah ayuu u shaqaynayaa. Reerka aad baan ugu talisay."</p>
+            <div class="testimonial-user">
+                <div class="user-avatar">FA</div>
+                <div class="user-meta">
+                    <h4>Faduma Ali</h4>
+                    <small>Ganacsade</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fikradda 3-aad -->
+        <div class="testimonial-card">
+            <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            <p class="testimonial-text">"Waa markii ugu horreysay ee aan online wax ka iibsado anigoo jooga dalka, laakiin som-electronics waxay iga saareen cabsi kasta. Adeegoodu waa 100% mid lagu kalsoonaan karo."</p>
+            <div class="testimonial-user">
+                <div class="user-avatar">MJ</div>
+                <div class="user-meta">
+                    <h4>Mohamed Jama</h4>
+                    <small>Arday</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Section-6 -->
+ <section class="newsletter-section">
+    <div class="newsletter-container">
+        <div class="newsletter-content">
+            <h2>Ku Biir Wargayskayaga</h2>
+            <p>Is-qor hadda si aad u hesho ogeysiisyada ku saabsan qiimo dhimista ugu dambeysay iyo alaabta cusub ee som-electronics.</p>
+        </div>
+        
+        <!-- Form-ka is-qorista -->
+        <form class="newsletter-form" onsubmit="event.preventDefault();">
+            <input type="email" placeholder="Geli iimaylkaaga halkan..." required class="newsletter-input">
+            <button type="submit" class="newsletter-btn">Is-qor Hadda</button>
+        </form>
+    </div>
+</section>
+<!-- Section-7 -->
+ <footer class="main-footer">
+    <div class="footer-container">
+        
+        <!-- Tiirka 1-aad: About & Socials -->
+        <div class="footer-column">
+            <a href="#" class="footer-logo">som<span>-electronics</span></a>
+            <p class="footer-about">Waxaan macaamiisheena u soo xulnaa agabka elektaroonigga ah ee ugu tayada sarreeya iyo tignoolajiyada ugu dambeysay dalka.</p>
+            <div class="social-links">
+                <a href="#" title="Facebook">📘</a>
+                <a href="#" title="Instagram">📸</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="WhatsApp">💬</a>
+            </div>
+        </div>
+
+        <!-- Tiirka 2-aad: Quick Links -->
+        <div class="footer-column">
+            <h3>Menu-yada</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Tiirka 3-aad: Customer Support -->
+        <div class="footer-column">
+            <h3>Caawinaad</h3>
+            <ul>
+                <li><a href="#faq">Su'aalaha Badanaa La Waydiiyo</a></li>
+                <li><a href="#shipping">Habka Gaarsiinta</a></li>
+                <li><a href="#returns">Beddelka Alaabta</a></li>
+                <li><a href="#privacy">Xog-dhawrka (Privacy)</a></li>
+            </ul>
+        </div>
+
+        <!-- Tiirka 4-aad: Contact Info -->
+        <div class="footer-column">
+            <h3>Nala Soo Xiriir</h3>
+            <ul class="contact-info">
+                <li>📍 Suuqa Bakaaraha, Mogadishu, Somalia</li>
+                <li>📞 +252 61 XXXXXXX</li>
+                <li>✉️ info@som-electronics.com</li>
+                <li>🕒 Sabti - Khamiis: 8:00 AM - 9:00 PM</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Xuquuqda Daabacaadda (Copyright) -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 som-electronics. All rights reserved. Developed with ❤️</p>
+    </div>
+</footer>
+
+</body>
+</html>

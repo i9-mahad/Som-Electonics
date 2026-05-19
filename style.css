@@ -1,0 +1,1155 @@
+
+/* Header Styles */
+.main-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: sticky; /* Wuxuu ku dhegayaa dusha sare marka hoos loo dego */
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Si uu had iyo jeer uga sarreeyo qaybaha kale sarybtooda */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo Design */
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #1f2937; /* Madow xarrago leh */
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    color: #2563eb; /* Midabka buluugga ah ee la midka ah badanka Hero-ga */
+}
+
+/* Links / Links Navigation */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px; /* Masaafo u dhaxeysa menu-yada */
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #4b5563;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Marka la dul istaago ama marka la joogo boggaas (Active) */
+.nav-menu ul li a:hover,
+.nav-menu ul li a.active {
+    color: #2563eb;
+}
+
+/* Qaybta Midig (Icons-ka) */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.action-link {
+    text-decoration: none;
+    color: #1f2937;
+    font-size: 1.3rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.action-link:hover {
+    color: #2563eb;
+}
+
+/* Tirada alaabta ku jirta Cart-ka */
+.cart-btn {
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: #ef4444; /* Midab gaduud ah */
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Responsive: Qalabka gacanta/Taleefannada */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none; /* Waxay fariisaneysaa menu-ga caadiga ah si hadhow loogu daro hamburger menu */
+    }
+    
+    .header-container {
+        padding: 12px 20px;
+    }
+    
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+/* section-1 */
+
+/* Guud ahaan resets si meesha looga saaro margins-ka aan loo baahnayn */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section Base Style */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 80vh; /* Wuxuu qaadanayaa 80% ka mid ah dhererka shaashada */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Halkaan geli sawirkaaga background-ka ah */
+    background-image: url('https://images.unsplash.com/photo-1468495244123-6c6c332eeece?q=80&w=1920'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Lakab madow oo khafiif ah oo saaran sawirka si qoraalka loo akhriyo */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 0.5 waa mugdiga overlay-ga */
+    z-index: 1;
+}
+
+/* Meesha qoraalka qaadda */
+.hero-content {
+    position: relative;
+    z-index: 2; /* Wuxuu ka sarreynayaa overlay-ga madow */
+    max-width: 800px;
+}
+
+/* Cinwaanka Weyn */
+.hero-title {
+    font-size: 3rem; /* Aad u weyn shaashadaha waaweyn */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Qoraalka Yar ee Sharaxaadda */
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 35px;
+    color: #e0e0e0;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* Badanka "Shop Now" */
+.hero-btn {
+    display: inline-block;
+    padding: 14px 35px;
+    background-color: #2563eb; /* Midabka bulshada/blue ah */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 30px; /* Sifeyn wareegsan (Round) */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+}
+
+/* Marka mouse-ka la dul dhigo badanka (Hover) */
+.hero-btn:hover {
+    background-color: #1d4ed8; /* Waxyar ayuu madoonaanayaa */
+    transform: translateY(-3px); /* Waxyar ayuu kor u kacayaa */
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+}
+
+/* Responsive: Wixii ka yar shaashadaha Laptop-ka (Taleefannada) */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 70vh; /* Waxyar ayaa la gaabinayaa dhererka shaashada yar */
+    }
+    
+    .hero-title {
+        font-size: 2rem; /* Qoraalka waa la yareynayaa */
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .hero-btn {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+}
+
+/* <!-- Section-2 --> */
+
+/* Categories Section Base */
+.categories-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Cinwaanka Cutubka */
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-title p {
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+/* Habaynta Grid-ka (4 Tiir ama Columns) */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px; /* Masaafada u dhaxaysa labada kaar */
+}
+
+/* Kaarka Qaybta (Category Card) */
+.category-card {
+    position: relative;
+    background-color: #f9fafb;
+    border-radius: 16px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: all 0.3s ease;
+}
+
+/* Weelka Sawirka */
+.category-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Qoraalka Kaarka dhexdiisa ah */
+.category-info {
+    padding: 20px;
+    background-color: #ffffff;
+    border-top: 1px solid #f3f4f6;
+}
+
+.category-info h3 {
+    font-size: 1.2rem;
+    color: #1f2937;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.category-info span {
+    font-size: 0.9rem;
+    color: #2563eb; /* Midabka buluugga ah ee website-ka */
+    font-weight: 500;
+    transition: padding-left 0.3s ease;
+}
+
+/* EFECTS: Marka mouse-ka la dul dhigo (Hover) */
+.category-card:hover {
+    transform: translateY(-5px); /* Kaarku kor ayuu u kici doonaa */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.category-card:hover .category-image img {
+    transform: scale(1.08); /* Sawirka waxyar ayuu weynaanayaa */
+}
+
+.category-card:hover .category-info span {
+    padding-left: 5px; /* Falaartu waxyar ayay dhex ruxmaysaa */
+}
+
+/* RESPONSIVE: Ku habaynta Shaashadaha kala duwan */
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 tiir shaashadaha dhexe */
+    }
+}
+
+@media (max-width: 600px) {
+    .categories-grid {
+        grid-template-columns: 1fr; /* 1 tiir oo kaliya taleefannada yaryar */
+        gap: 20px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+}
+
+/* <!-- Section-3 --> */
+/* Products Section Base */
+.products-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Products Grid (4 Tiir) */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+/* Kaarka Alaabta (Product Card) */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+/* Badges (Sale / Hot) */
+.product-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 20px;
+    z-index: 5;
+    text-transform: uppercase;
+}
+
+.product-badge.sale {
+    background-color: #ef4444; /* Gaduud */
+}
+
+.product-badge.hot {
+    background-color: #f97316; /* Liimi */
+}
+
+/* Sawirka Alaabta */
+.product-image {
+    width: 100%;
+    height: 220px;
+    background-color: #f3f4f6;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Macluumaadka Alaabta */
+.product-details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product-category {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    color: #1f2937;
+    margin-bottom: 10px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/* Qiimaha (Price) */
+.product-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.current-price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.old-price {
+    font-size: 0.95rem;
+    color: #9ca3af;
+    text-decoration: line-through; /* Khad dhex jiifa */
+}
+
+/* Badanka Add to Cart */
+.add-to-cart-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #2563eb;
+    color: #2563eb;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto; /* Wuxuu ku riixayaa badanka hoosta kaarka */
+    transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Tiir shaashadaha dhexe */
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr; /* 1 Tiir oo kaliya taleefannada */
+    }
+}
+
+/* <!-- Section-3 --> */
+/* Offers Section Base */
+.offers-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Labo tiir oo isle'eg */
+    gap: 30px;
+}
+
+/* Guud ahaan Banners-ka */
+.offer-banner {
+    position: relative;
+    min-height: 350px;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Banner-ka Bidix (Madow/Premium style) */
+.banner-left {
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.3)), 
+                      url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=600');
+    color: #ffffff;
+}
+
+/* Banner-ka Midig (Furiin/Cadaan style) */
+.banner-right {
+    background-color: #f3f4f6;
+    background-image: linear-gradient(to right, rgba(243,244,246,0.9), rgba(243,244,246,0.2)), 
+                      url('https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=600');
+    color: #1f2937;
+}
+
+/* Qoraalka dhexda guud ahaan */
+.offer-content {
+    max-width: 70%;
+    z-index: 2;
+}
+
+.offer-tag {
+    display: inline-block;
+    padding: 5px 12px;
+    background-color: #ef4444;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    border-radius: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.offer-tag.font-blue {
+    background-color: #2563eb;
+}
+
+.offer-content h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.offer-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+/* Saacadda (Countdown) */
+.countdown {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.countdown-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-align: center;
+    min-width: 65px;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.countdown-item small {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+/* Badhamada Offers-ka */
+.offer-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.offer-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.offer-btn.btn-secondary {
+    background-color: #1f2937;
+}
+
+.offer-btn.btn-secondary:hover {
+    background-color: #111827;
+}
+
+/* Calaamadda wareegsan ee -30% */
+.discount-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ef4444;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 10px rgba(239, 68, 68, 0.3);
+}
+
+/* Hover Effect guud */
+.offer-banner:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .offers-container {
+        grid-template-columns: 1fr; /* Wuxiy noqonayaan isku-kor shaashadaha yar yar */
+    }
+    .offer-content {
+        max-width: 100%;
+    }
+}
+/* <!-- Section-4 --> */
+/* Best Sellers Section Base */
+.bestsellers-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Grid Layout (4 Tiir) */
+.bestsellers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Kaarka Bestseller (Bestseller Card) */
+.bestseller-card {
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #f3f4f6;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Weelka Sawirka iyo Wishlist */
+.card-img-container {
+    position: relative;
+    height: 200px;
+    background-color: #f9fafb;
+    overflow: hidden;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* Badanka Wadnaha (Wishlist) */
+.wishlist-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: #ffffff;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-size: 0.9rem;
+    transition: transform 0.2s ease;
+}
+
+.wishlist-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Macluumaadka Qoraalka */
+.card-info {
+    padding: 20px;
+}
+
+/* Xiddigaha Qiimaynta */
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+}
+
+.rating small {
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.card-info h3 {
+    font-size: 1.05rem;
+    color: #1f2937;
+    margin-bottom: 6px;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Haddii magacu dheeraado wuxuu keenayaa ... */
+}
+
+/* Imisaa la iibiyay */
+.sales-count {
+    font-size: 0.85rem;
+    color: #d97706; /* Midab dahabi/orongi ah */
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* Qaybta hoose ee Kaarka (Price + Cart Button) */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 12px;
+}
+
+.card-footer .price {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* Badanka yar ee Cart-ka */
+.action-icon-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.action-icon-btn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.05);
+}
+
+/* Hover Effects guud */
+.bestseller-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.bestseller-card:hover .card-img-container img {
+    transform: scale(1.04);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .bestsellers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .bestsellers-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* <!-- Section-5 --> */
+/* Testimonials Section Base */
+.testimonials-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Layout-ka Grid-ka (3 Tiir) */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* Kaarka Testimonial-ka */
+.testimonial-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Xiddigaha */
+.testimonial-stars {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Qoraalka Fikradda */
+.testimonial-text {
+    font-size: 1rem;
+    color: #4b5563;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 25px;
+}
+
+/* Qaybta Macaamilka (Avatar + Magaca) */
+.testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid #f3f4f6;
+    padding-top: 15px;
+}
+
+/* Wareegga xarfaha magaca (Avatar placeholder) */
+.user-avatar {
+    width: 45px;
+    height: 45px;
+    background-color: #e0f2fe; /* Buluug khafiif ah */
+    color: #0284c7; /* Buluug madow */
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.user-meta h4 {
+    font-size: 1rem;
+    color: #1f2937;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.user-meta small {
+    color: #9ca3af;
+    font-size: 0.85rem;
+}
+
+/* Hover Effect */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+    border-color: #d1d5db;
+}
+
+/* RESPONSIVE */
+@media (max-width: 968px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Tiir shaashadaha dhexe */
+    }
+}
+
+@media (max-width: 650px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* 1 Tiir oo kaliya taleefannada */
+    }
+}
+/* <!-- Section-6 --> */
+/* Newsletter Section Base */
+.newsletter-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+/* Weelka weyn ee Newsletter-ka (Sanduuq buluug ah) */
+.newsletter-container {
+    background-color: #2563eb; /* Midabka buluugga ah ee dukaanka */
+    background-image: radial-gradient(circle at top right, rgba(255,255,255,0.1), transparent);
+    border-radius: 24px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.2);
+}
+
+/* Qoraalka dhexda */
+.newsletter-content {
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.newsletter-content h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.newsletter-content p {
+    font-size: 1.05rem;
+    color: #bfdbfe; /* Buluug aad u iftiimaya oo jilicsan */
+    line-height: 1.6;
+}
+
+/* Form-ka (Input + Button) */
+.newsletter-form {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    background-color: #ffffff;
+    padding: 6px;
+    border-radius: 50px; /* Ka dhigaya mid wareegsan darafyada */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Meesha iimaylka laga qoro */
+.newsletter-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 1rem;
+    color: #1f2937;
+    border-radius: 50px;
+    background: transparent;
+}
+
+/* Sifaynta qoraalka gudaha marka aan waxba la qorin */
+.newsletter-input::placeholder {
+    color: #9ca3af;
+}
+
+/* Badanka Is-qorista */
+.newsletter-btn {
+    background-color: #1f2937; /* Madow si uu buluugga uga dhex muuqdo */
+    color: #ffffff;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+/* Hover Effect-ka badanka */
+.newsletter-btn:hover {
+    background-color: #111827;
+}
+
+.newsletter-btn:active {
+    transform: scale(0.98); /* Waxyar ayuu isku ururayaa marka la riixo */
+}
+
+/* RESPONSIVE: Ku habaynta Talefannada */
+@media (max-width: 600px) {
+    .newsletter-container {
+        padding: 40px 20px;
+    }
+    
+    .newsletter-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    /* Form-ku wuxuu noqonayaa mid is-kor fadhiya talefanka dhexdiis */
+    .newsletter-form {
+        flex-direction: column;
+        background-color: transparent;
+        box-shadow: none;
+        gap: 12px;
+        padding: 0;
+    }
+    
+    .newsletter-input {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        border-radius: 50px;
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+    
+    .newsletter-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+/* <!-- Section-7 --> */
+
+/* Footer Base Styles */
+.main-footer {
+    background-color: #111827; /* Madow aad u qurux badan */
+    color: #9ca3af; /* Qoraal cawl khafiif ah si uu indhaha u uro */
+    padding: 60px 0 20px 0;
+    font-size: 0.95rem;
+    border-top: 4px solid #2563eb; /* Khad yar oo buluug ah oo dusha ka maraya */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr); /* Tiirka 1-aad waxyar ayuu ka ballaran yahay kuwa kale */
+    gap: 40px;
+}
+
+/* Tiirarka Footer-ka */
+.footer-column h3 {
+    color: #ffffff; /* Cinwaannada tiirarka waa caddaan */
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Khad yar oo hoos mara cinwaannada tiirarka */
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #2563eb;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column ul li a {
+    color: #9ca3af;
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+/* Hover effect-ka links-ka footer-ka */
+.footer-column ul li a:hover {
+    color: #ffffff;
+    padding-left: 5px; /* Waxyar ayuu midig u ruxmayaa marka la dul istaago */
+}
+
+/* Qaybta Logo-ga Footer-ka */
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.footer-logo span {
+    color: #2563eb;
+}
+
+.footer-about {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Baraha Bulshada (Social Icons) */
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    background-color: #1f2937;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-links a:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+/* Nala soo xiriir macluumaadka */
+.contact-info li {
+    line-height: 1.5;
+    color: #9ca3af;
+}
+
+/* Qaybta ugu hooseysa (Copyright) */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0 auto;
+    padding: 20px 20px 0 20px;
+    border-top: 1px solid #1f2937;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+/* RESPONSIVE: Ku habaynta Shaashadaha kala duwan */
+@media (max-width: 968px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 Tiir shaashadaha dhexe */
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        grid-template-columns: 1fr; /* 1 Tiir oo kaliya talefannada */
+        gap: 30px;
+    }
+}
